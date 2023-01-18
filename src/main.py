@@ -6,10 +6,29 @@ BANK_NAME = "GENGAR BANK"
 DATA = {}
 
 def create_bank_account(name, password):
+   """
+   Create a new bank account and add its information to the database.
+
+   Args:
+      name: The name of the bank account holder.
+      password: The password for the account.
+   
+   Returns:
+      New bank account object.
+   """
    DATA[name] = password
    return BankAccount(name)
 
 def how_can_i_help(account):
+   """
+   Give the user access to account actions.
+
+   Args:
+      account: The account attached to the user.
+
+   Returns:
+      None.
+   """
    print("How can we help you?")
    print("1. Deposit")
    print("2. Withdraw")
