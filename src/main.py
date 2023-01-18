@@ -1,3 +1,7 @@
+"""
+Display account actions.
+"""
+
 import sys
 import getpass
 from bank_account import BankAccount
